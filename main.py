@@ -20,21 +20,23 @@ casper = turtle.Turtle()
 # When you want to use functions, you need to
 # define them first in Python
 # We will create a function called redTriangle
-def redTriangle():
+# Now we will add an argument to our function to
+# change the length of the side
+def redTriangle(side):
   casper.color('red')
-  casper.forward(50)
+  casper.forward(side)
   casper.left(120)
-  casper.forward(50)
+  casper.forward(side)
   casper.left(120)
-  casper.forward(50)
+  casper.forward(side)
   casper.left(120)
 
 # A function does not do anything until you call it
 # So let's call our function
 
-redTriangle()
-casper.goto(10,0)
-redTriangle()
+redTriangle(50)
 casper.goto(20,0)
-redTriangle()
+redTriangle(75)
+casper.goto(40,0)
+redTriangle(45)
   
